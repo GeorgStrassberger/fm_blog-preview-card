@@ -90,7 +90,7 @@
       padding: 8px 12px;
       width: max-content;
       font-family: inherit;
-      font-weight: 900;
+      font-weight: 800;
       font-size: 12px;
       line-height: 150%;
     }
@@ -99,16 +99,23 @@
       color: var(--black);
       font-family: inherit;
       font-size: 12px;
-      font-weight: 600;
+      font-weight: 500;
       line-height: 150%;
     }
 
     .card__title {
       font-family: inherit;
-      font-weight: 900;
+      font-weight: 800;
       font-size: 20px;
       color: var(--black);
       line-height: 150%;
+    }
+
+    .card__title:hover,
+    .card__title:active,
+    .card__title:focus {
+      cursor: pointer;
+      color: var(--yellow);
     }
 
     .card__description {
@@ -134,7 +141,7 @@
 
     .card__author-name {
       font-family: inherit;
-      font-weight: 900;
+      font-weight: 800;
       font-size: 14px;
       color: var(--black);
       line-height: 150%;
@@ -152,7 +159,6 @@
 
       .card__date {
         font-size: 14px;
-        font-weight: 600;
       }
 
       .card__title {
