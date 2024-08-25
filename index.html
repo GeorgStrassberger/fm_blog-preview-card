@@ -20,6 +20,13 @@
       src: url('./assets/fonts/Figtree-Italic-VariableFont_wght.ttf');
     }
 
+    :root {
+      --yellow: #F4D04E;
+      --white: #FFFFFF;
+      --grey: #6B6B6B;
+      --black: #111111;
+    }
+
     * {
       margin: 0;
       padding: 0;
@@ -32,6 +39,7 @@
       flex-direction: column;
       justify-content: center;
       align-items: center;
+      background-color: var(--yellow);
     }
 
     .container {
@@ -45,17 +53,26 @@
     .card {
       height: 501px;
       width: 327px;
-      border: 1px solid black;
+      border: 1px solid var(--black);
       display: flex;
       flex-direction: column;
       gap: 24px;
       padding: 24px;
       border-radius: 20px;
+      background-color: var(--white);
+      box-shadow: 8px 8px 0 0 var(--black);
     }
+
+    /* change to svg */
+    /* .card__blog-svg {} */
 
     .card__blog-img {
       display: block;
       border-radius: 10px;
+      height: 200px;
+      width: 100%;
+      object-fit: cover;
+      object-position: center center;
     }
 
 
@@ -76,7 +93,7 @@
       font-family: "Figtree";
       font-weight: 950;
       font-size: 14px;
-      color: #111111;
+      color: var(--black);
       line-height: 150%;
     }
   </style>
@@ -90,7 +107,12 @@
       <img class="card__blog-img" src="./assets/images/illustration-article.svg" alt="card-image">
       <!-- CONTENT -->
       <section class="card__content">
-
+        <!-- CATEGORY -->
+        <div class="card__category">Learning</div>
+        <div class="card__date">Published 21 Dec 2023</div>
+        <div class="card__title">HTML & CSS foundations</div>
+        <div class="card__description">These languages are the backbone of every website, defining structure, content,
+          and presentation.</div>
       </section>
       <!-- AUTHER -->
       <section class="card__author">
