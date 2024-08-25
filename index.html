@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Blog preview card</title>
+
+  <style>
+    @font-face {
+      font-family: "Figtree";
+      src: url('./assets/fonts/Figtree-VariableFont_wght.ttf');
+    }
+
+    @font-face {
+      font-family: "Figtree Italic";
+      src: url('./assets/fonts/Figtree-Italic-VariableFont_wght.ttf');
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      min-height: 100dvh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .container {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .card {
+      height: 501px;
+      width: 327px;
+      border: 1px solid black;
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+      padding: 24px;
+      border-radius: 20px;
+    }
+
+    .card__blog-img {
+      display: block;
+      border-radius: 10px;
+    }
+
+
+    .card__author {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .card__author-img {
+      height: 32px;
+      width: 32px;
+    }
+
+    .card__author-name {
+      font-family: "Figtree";
+      font-weight: 950;
+      font-size: 14px;
+      color: #111111;
+      line-height: 150%;
+    }
+  </style>
+</head>
+
+<body>
+
+  <main class="container">
+    <div class="card">
+      <!-- BLOG IMAGE -->
+      <img class="card__blog-img" src="./assets/images/illustration-article.svg" alt="card-image">
+      <!-- CONTENT -->
+      <section class="card__content">
+
+      </section>
+      <!-- AUTHER -->
+      <section class="card__author">
+        <img class="card__author-img" src="./assets/images/image-avatar.webp" alt="avatar">
+        <span class="card__author-name">Greg Hooper</span>
+      </section>
+    </div>
+  </main>
+
+</body>
+
+</html>
