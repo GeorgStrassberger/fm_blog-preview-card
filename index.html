@@ -83,12 +83,14 @@
     }
 
     .card__category {
-      text-transform: capitalize;
       color: var(--black);
       background-color: var(--yellow);
       border-radius: 4px;
       padding: 8px 12px;
       width: max-content;
+    }
+
+    .card__category span {
       font-family: inherit;
       font-weight: 800;
       font-size: 12px;
@@ -153,7 +155,7 @@
         width: 384px;
       }
 
-      .card__category {
+      .card__category span {
         font-size: 14px;
       }
 
@@ -180,7 +182,7 @@
       <img class="card__blog-img" src="./assets/images/illustration-article.svg" alt="card-image">
       <!-- CONTENT -->
       <section class="card__content">
-        <div class="card__category">Learning</div>
+        <div class="card__category"><span>Learning</span></div>
         <div class="card__date">Published <time datetime="2032-12-21">21 Dec 2023</time></div>
         <div class="card__title">HTML & CSS foundations</div>
         <div class="card__description">These languages are the backbone of every website, defining structure, content,
